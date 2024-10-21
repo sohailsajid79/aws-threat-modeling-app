@@ -1,0 +1,6 @@
+import React from 'react';
+import { PopoverProps } from './interfaces';
+export { PopoverProps };
+declare const Popover: React.ForwardRefExoticComponent<PopoverProps & React.RefAttributes<PopoverProps.Ref>>;
+export default Popover;
+//# sourceMappingURL=index.d.ts.map

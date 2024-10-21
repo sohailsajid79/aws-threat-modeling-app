@@ -1,0 +1,10 @@
+import React from 'react';
+import { SplitPanelContextBaseProps } from '../../internal/context/split-panel-context';
+export interface SplitPanelProviderProps extends SplitPanelContextBaseProps {
+    maxWidth: number;
+    reportSize: (size: number) => void;
+    getMaxHeight: () => number;
+    children?: React.ReactNode;
+}
+export declare function SplitPanelProvider({ children, size, getMaxHeight, maxWidth, reportSize, onResize, ...rest }: SplitPanelProviderProps): JSX.Element;
+//# sourceMappingURL=provider.d.ts.map

@@ -1,0 +1,18 @@
+import { ComponentWrapper, ElementWrapper } from '@cloudscape-design/test-utils-core/dom';
+export declare class StepWrapper extends ComponentWrapper {
+    /**
+     * Finds the header of a step
+     */
+    findHeader(): ElementWrapper | null;
+    /**
+     * Finds the details of a step
+     */
+    findDetails(): ElementWrapper | null;
+}
+export default class StepsWrapper extends ComponentWrapper {
+    static rootSelector: string;
+    /**
+     * Finds all step items
+     */
+    findItems(): Array<StepWrapper>;
+}

@@ -1,1 +1,0 @@
-# threat-modeling-app

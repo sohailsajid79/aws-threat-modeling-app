@@ -1,0 +1,10 @@
+export declare function splitItems<T extends {
+    id: string;
+}>(maybeItems: ReadonlyArray<T> | undefined, splitIndex: number, activeId: string | null): {
+    visibleItems: readonly T[];
+    overflowItems: never[];
+} | {
+    visibleItems: T[];
+    overflowItems: T[];
+};
+//# sourceMappingURL=drawers-helpers.d.ts.map

@@ -1,0 +1,6 @@
+import React from 'react';
+import { SelectableItemProps } from './interfaces';
+export { SelectableItemProps };
+declare const _default: React.ForwardRefExoticComponent<SelectableItemProps & React.RefAttributes<HTMLDivElement>>;
+export default _default;
+//# sourceMappingURL=index.d.ts.map

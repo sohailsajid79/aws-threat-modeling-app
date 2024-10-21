@@ -1,0 +1,10 @@
+import React from 'react';
+import { BaseComponentProps } from '../internal/base-component';
+export interface TextContentProps extends BaseComponentProps {
+    /**
+     * Content of the component.
+     * @displayname content
+     */
+    children?: React.ReactNode;
+}
+//# sourceMappingURL=interfaces.d.ts.map

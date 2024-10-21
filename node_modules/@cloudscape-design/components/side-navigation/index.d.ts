@@ -1,0 +1,5 @@
+/// <reference types="react" />
+import { SideNavigationProps } from './interfaces';
+export { SideNavigationProps };
+export default function SideNavigation({ items, ...props }: SideNavigationProps): JSX.Element;
+//# sourceMappingURL=index.d.ts.map
