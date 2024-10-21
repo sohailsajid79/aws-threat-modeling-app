@@ -1,7 +1,0 @@
-/// <reference types="react" />
-import { InternalBaseComponentProps } from '../internal/hooks/use-base-component';
-import { SliderProps } from './interfaces.js';
-export interface InternalSliderProps extends SliderProps, InternalBaseComponentProps {
-}
-export default function InternalSlider({ value, min, max, onChange, step, disabled, readOnly, ariaLabel, ariaDescription, referenceValues, tickMarks, hideFillLine, valueFormatter, i18nStrings, __internalRootRef, ...rest }: InternalSliderProps): JSX.Element;
-//# sourceMappingURL=internal.d.ts.map
