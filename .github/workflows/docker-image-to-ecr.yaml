@@ -19,7 +19,7 @@ jobs:
           ref: ${{ github.event.inputs.branch }}
 
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -34,13 +34,13 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t tm-app .
-          docker tag tm-app:latest ${{ steps.login-ecr.outputs.registry }}/tm-app:latest
+          docker build -t aws-threat-modeling-app .
+          docker tag aws-threat-modeling-app:latest ${{ steps.login-ecr.outputs.registry }}/aws-threat-modeling-app:latest
 
       - name: Push Docker image to ECR
         run: |
-          docker push ${{ steps.login-ecr.outputs.registry }}/tm-app:latest
+          docker push ${{ steps.login-ecr.outputs.registry }}/aws-threat-modeling-app:latest
 
       - name: Output image URL
         run: |
-          echo "Image URL: ${{ steps.login-ecr.outputs.registry }}/tm-app:latest"
+          echo "Image URL: ${{ steps.login-ecr.outputs.registry }}/aws-threat-modeling-app:latest"
