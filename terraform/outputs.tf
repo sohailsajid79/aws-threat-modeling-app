@@ -15,7 +15,7 @@ output "ecs_service_arn" {
 
 output "vpc_id" {
   description = "VPC ID"
-  value = module.vpc.vpc_id
+  value       = module.vpc.vpc_id
 }
 
 output "public_subnet_ids" {
@@ -29,5 +29,5 @@ output "name_servers" {
 
 output "sg_id" {
   description = "Security group ID"
-  value = module.securitygroup.sg_id
+  value       = module.securitygroup.sg_id
 }
