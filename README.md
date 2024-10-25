@@ -239,11 +239,13 @@ The workflow automates the entire process of deploying AWS infrastructure, cover
 
 File Name: `terraform-destroy.yaml`
 
-This workflow is dedicated to the safe teardown of AWS infrastructure, ensuring that all resources are destroyed in the correct order.
+![destroy-infrastructure](./assets/destroy-infrastructure%20pipeline.png)
+
+This workflow is dedicated to the safe teardown of AWS infrastructure, ensuring that all resources are destroyed.
 
 **Jobs in this workflow**:
 
-- Job 1: Destroy all Terraform-managed resources in the correct order. - `terraform-destroy-all`
+- Job 1: Destroy all Terraform-managed resources stored in our S3 backend. - `terraform-destroy-all`
 
 ❗ After the workflow finished, I manually removed the name server entries from the custom DNS settings in Namecheap, and reverted to Namecheap BasicDNS.
 
