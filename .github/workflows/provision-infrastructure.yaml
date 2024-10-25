@@ -117,6 +117,11 @@ jobs:
         run: |
           aws s3 cp terraform/name_servers.txt s3://name-server-bucket-101/name_servers.txt
 
+      - name: Wait for DNS Propagation (5 minutes)
+        run: |
+          echo "Waiting for DNS to propagate for 5 minutes..."
+          sleep 300  # Wait for 300 seconds (5 minutes)
+
   terraform-apply-remaining:
     runs-on: ubuntu-latest
     needs: terraform-apply-route53
