@@ -13,9 +13,10 @@
 7. [CI/CD Pipeline](#cicd-pipeline)
    - [Automating Deployments with GitHub Actions Workflow](#automating-deployments-with-github-actions-workflow)
    - [Destroy Workflow](#destroy-workflow)
-8. [What I Learned](#what-i-learned)
-9. [Conclusion](#conclusion)
-10. [Get Involved](#get-involved)
+8. [Clean Up](#clean-up)
+9. [What I Learned](#what-i-learned)
+10. [Conclusion](#conclusion)
+11. [Get Involved](#get-involved)
 
 # Threat Modeling: Enhancing Your Security Strategy
 
@@ -254,6 +255,19 @@ Working on the Threat Composer project was an invaluable experience that allowed
 - **Infrastructure as Code**: Managing complex cloud infrastructure using Terraform taught me the importance of modular, reusable configurations and the power of version-controlled infrastructure changes.
 - **Containerisation**: Dockerising the application and optimising the image size through multi-stage build enhanced my ability to create efficient and portable application environments.
 - **DevOps Best Practices**: Implementing automated deployment pipelines with GitHub Actions reinforced the need for seamless, repeatable processes that ensure code quality and infrastructure reliability.
+
+## Clean Up
+
+Manually empty the S3 bucket before deleting from the AWS CLI:
+
+![cleanup](./assets/clean%20up.png)
+
+Alternatively, delete S3 buckets from the terminal:
+
+```
+aws s3api delete-bucket --bucket name-server-bucket-101 --region eu-north-1
+aws s3api delete-bucket --bucket tm-app-remote-tfstate --region eu-north-1
+```
 
 ## Conclusion
 
