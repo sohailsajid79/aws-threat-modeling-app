@@ -215,6 +215,9 @@ terraform destroy -auto-approve
 
 ### Automating Deployments with GitHub Actions Workflow
 
+[![Provision AWS Infrastructure](https://github.com/sohailsajid79/aws-threat-modeling-app/actions/workflows/provision-infrastructure.yaml/badge.svg)](https://github.com/sohailsajid79/aws-threat-modeling-app/actions/workflows/provision-infrastructure.yaml)
+[![Destroy AWS Infrastructure](https://github.com/sohailsajid79/aws-threat-modeling-app/actions/workflows/terraform-destroy.yaml/badge.svg)](https://github.com/sohailsajid79/aws-threat-modeling-app/actions/workflows/terraform-destroy.yaml)
+
 #### Provisioning the Infrastructure Workflow
 
 File Name: `provision-infrastructure.yaml`
