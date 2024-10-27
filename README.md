@@ -41,6 +41,8 @@ The [AWS Threat Composer](https://github.com/awslabs/threat-composer) integrates
 
 The project demonstrates how to Dockerise and deploy a pre-built threat modeling application to AWS using modern DevOps practices. My role as a DevOps Engineer involved containerising the app with Docker, deploying it to AWS using ECS, ALB, and Route53, and managing infrastructure with Terraform. I also built a CI/CD pipeline for automated deployments, ensuring scalability and efficiency. The setup enables users to simulate real-world threat scenarios and model security vulnerabilities effectively using AWS capabilities.
 
+![architecture](./assets/architecture.drawio.png)
+
 ## Getting Started
 
 ### Prerequisites
